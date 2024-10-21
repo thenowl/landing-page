@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+/* GENERAL SETTINGS: */
 body {
   font-family: Roboto, Verdana, sans-serif;
   font-size: 1rem;
@@ -31,6 +32,22 @@ body {
 .testimonials,
 .action-container {
   padding: 100px 40px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  /* transition-duration: 100ms; */
+}
+
+a:hover {
+  text-shadow: 3px 2px 15px rgba(249, 250, 248, 0.6);
+  transition-duration: 100ms;
+}
+
+a:active {
+  text-shadow: none;
 }
 
 header,
@@ -64,19 +81,17 @@ nav ul {
   gap: 20px;
 }
 
-a,
-a:visited {
-  text-decoration: none;
-  color: inherit;
+/* HERO-SECTION: */
+.hero {
+  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.7);
 }
 
-/* HERO-SECTION: */
 .hero-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 100px;
 }
 
 .hero-text {
@@ -105,7 +120,17 @@ h1 {
   font-size: 1.2rem;
   padding: 8px 24px;
   border-radius: 10px;
+  box-shadow: 2px 3px 10px rgba(56, 130, 246, 0.4);
   cursor: pointer;
+}
+
+.hero-button:hover {
+  background: #1e74ff;
+  box-shadow: 2px 3px 15px rgba(80, 147, 255, 0.5);
+}
+
+.hero-button:active {
+  box-shadow: none;
 }
 
 .hero-img {
@@ -117,6 +142,9 @@ h1 {
 
 .hero img {
   background: gray;
+  flex: 1 1 0%;
+  max-width: 550px;
+  height: auto;
 }
 
 /* INFO-SECTION: */
@@ -139,6 +167,7 @@ h1 {
 .info-card {
   text-align: center;
   width: 150px;
+  cursor: pointer;
 }
 
 .info-card img {
@@ -146,6 +175,18 @@ h1 {
   height: 150px;
   border: 4px solid #3882f6;
   border-radius: 20px;
+  box-shadow: 5px 3px 10px rgba(31, 41, 55, 0.3);
+  transition-duration: 100ms;
+}
+
+.info-card:hover img {
+  border-color: #5093ff;
+  box-shadow: 5px 3px 15px rgba(31, 41, 55, 0.4);
+}
+
+.info-card:active img {
+  border-color: #1e74ff;
+  box-shadow: none;
 }
 
 /* TESTIMONIAL-SECTION: */
@@ -187,9 +228,13 @@ h1 {
   background: #3882f6;
   color: #f9faf8;
   border-radius: 10px;
-  padding: 40px 100px;
+  padding: 40px 80px;
   flex-wrap: wrap;
   gap: 60px;
+}
+
+.action-text {
+  line-height: 1.3rem;
 }
 
 .action-button {
@@ -199,7 +244,17 @@ h1 {
   font-size: 1rem;
   padding: 5px 24px;
   border-radius: 10px;
+  box-shadow: 2px 3px 10px rgba(249, 250, 248, 0.4);
   cursor: pointer;
+}
+
+.action-button:hover {
+  background: #1e74ff;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.action-button:active {
+  box-shadow: none;
 }
 
 /* FOOTER: */
