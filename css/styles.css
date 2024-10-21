@@ -143,9 +143,9 @@ h1 {
 
 .hero img {
   background: gray;
-  flex: 1 1 0%;
   max-width: 550px;
   height: auto;
+  flex: 1 1 0%;
 }
 
 /* INFO-SECTION: */
