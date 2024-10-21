@@ -9,22 +9,26 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="/">Header Logo</a>
-      </div>
+  <header class="centered-flex">
+    <div class="nav-container">
+      <nav>
+        <div class="logo">
+          <a href="/">Header Logo</a>
+        </div>
 
-      <div class="header-links">
-        <ul>
-          <li><a href="#">header link one</a></li>
-          <li><a href="#">header link two</a></li>
-          <li><a href="#">header link three</a></li>
-        </ul>
-      </div>
-    </nav>
+        <div class="header-links">
+          <ul>
+            <li><a href="#">header link one</a></li>
+            <li><a href="#">header link two</a></li>
+            <li><a href="#">header link three</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero">
+  <section class="hero centered-flex">
+    <div class="hero-container">
       <div class="hero-text">
         <h1>This website is awesome</h1>
         <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower
@@ -34,13 +38,13 @@
       <div class=" hero-img">
         <img src="" alt="" width="450" height="200">
       </div>
-    </section>
-  </header>
+    </div>
+  </section>
 
   <main>
-    <section class="info-container">
+    <section class="info-container centered-flex">
       <h2>Some random information</h2>
-      <div class="info-cards-container">
+      <div class="info-cards-container centered-flex">
         <div class="info-card">
           <img src="" alt="" width="150" height="150">
           <p>this is some subtext under an illustration or image</p>
@@ -62,24 +66,26 @@
     </section>
 
     <section class="testimonials">
-      <div class="testimonial-card">
-        <quoteblock cite="">
-          <p>This is an inspirational quote, or a testimonial from a customer. Maybe it's just filling up space, or
-            maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-        </quoteblock>
-        <p class="testimonial-name">&#8212;Thor, God of Thunder</p>
+      <div class="testimonials-container centered-flex">
+        <div class="testimonial-card centered-flex">
+          <blockquote cite="">
+            <p>This is an inspirational quote, or a testimonial from a customer. Maybe it's just filling up space, or
+              maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+          </blockquote>
+          <p class="testimonial-name">&#8212;Thor, God of Thunder</p>
+        </div>
+        <!-- <div class="testimonial-card centered-flex">
+          <blockquote cite="">
+            <p>This is an inspirational quote, or a testimonial from a customer. Maybe it's just filling up space, or
+              maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+          </blockquote>
+          <p class="testimonial-name">&#8212;Thor, God of Thunder</p>
+        </div> -->
       </div>
-      <!-- <div class="testimonial-card">
-        <quoteblock cite="">
-          <p>This is an inspirational quote, or a testimonial from a customer. Maybe it's just filling up space, or
-            maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-        </quoteblock>
-        <p class="testimonial-name">&#8212;Thor, God of Thunder</p>
-      </div> -->
     </section>
 
-    <section class="action-container">
-      <div class="action-frame">
+    <section class="action-container centered-flex">
+      <div class="action-frame centered-flex">
         <div class="action-text">
           <h3>Call to action! It's time!</h3>
           <p>Sign up for our product by clicking that button right over there!</p>
@@ -91,7 +97,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="centered-flex">
     <p>Copyright &copy; TheNowl 2024</p>
   </footer>
 </body>
